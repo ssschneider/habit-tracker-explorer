@@ -1,0 +1,128 @@
+body {
+    background-color: #09090A;
+    height: 100vh;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    position: fixed;
+    padding: 48px;
+    background-color: #09090A;
+    width: 90vw;
+}
+
+.btn-register {
+    background-color: transparent;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #8B5CF6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: 0.5s ease-in-out;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-register span {
+    color: #8B5CF6;
+    margin-right: 12px;
+    font-size: 24px;
+}
+
+.btn-register:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+form {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 64px;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 56px;
+}
+
+.habits, .days {
+    margin-top: 196px;
+}
+
+.habit {
+    font-size: 40px;
+    border: 1px solid #09090A;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    display: flex;
+    gap: 48px;
+}
+
+.days:last-child {
+    padding-right: 48px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    color: #A1A1AA;
+    font-size: 20px;
+    padding: 8px 0;
+    line-height: 125%;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 2px solid #27272A;
+    background-color: #18181B;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+input:hover {
+    background-color: #6D28D9;
+}
+
+input:checked {
+    border: 2px solid #A78BFA;
+    background-color: #8B5CF6;
+}
+
+@media (max-width: 548px) {
+    .btn-register div {
+        display: none;
+    }
+
+    .btn-register span {
+        margin: 0;
+    }
+}

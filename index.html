@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Habit Tracker</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="src/css/reset.css" />
+		<link rel="stylesheet" href="src/css/index.css" />
+		<link rel="stylesheet" href="src/css/scrollbar.css">
+	</head>
+	<body>
+		<header>
+			<h1>
+				<img src="src/images/logo.svg" class="logo" />
+			</h1>
+
+			<button class="btn-register" id="btn">
+				<span>+</span>
+				<div>Registrar meu dia</div>
+			</button>
+		</header>
+
+		<main>
+			<form>
+				<section class="habits">
+					<div class="habit" data-name="run">
+						🏃‍♀️
+					</div>
+					<div class="habit" data-name="water">
+						💧
+					</div>
+					<div class="habit" data-name="football">
+						⚽
+					</div>
+					<div class="habit" data-name="medicine">
+						💊
+					</div>
+				</section>
+				<section class="days">
+
+				</section>
+			</form>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+		<script src="src/js/index.js"></script>
+	</body>
+</html>
